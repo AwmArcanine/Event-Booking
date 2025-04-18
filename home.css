@@ -1,0 +1,255 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+}
+
+:root{
+    --primary-color: #1d3556;
+    --secondary-color: #CDC2A5;
+    --tertiary-color: #E1D7C6;
+    --quarternary-color: #EAE4DD;
+    --navbar-color: #EAE4DD;
+    --font-family: 'Arial', sans-serif;
+}
+
+.nav{
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--navbar-color);
+}
+
+.menu ul li{
+    list-style: none;
+    font-size: large;
+    font-weight: bold;
+    gap: 30px;
+    padding: 10px 20px;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li:hover{
+    color: white;
+    cursor: pointer;
+    background-color: var(--tertiary-color);
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    animation: slideshow 15s infinite linear;
+    background-image: url('pics/images1.png'), url('pics/images2.png');
+    background-blend-mode: fade;
+}
+
+@keyframes slideshow {
+    0%, 12.5% { background-image: url('pics/images1.png'), url("pics/images2.png"); }
+    12.5%, 25% { background-image: url("pics/images2.png"), url("pics/images3.png"); }
+    25%, 37.5% { background-image: url("pics/images3.png"), url("pics/images4.png"); }
+    37.5%, 50% { background-image: url("pics/images4.png"), url("pics/images5.png"); }
+    50%, 62.5% { background-image: url("pics/images5.png"), url("pics/images6.png"); }
+    62.5%, 75% { background-image: url("pics/images6.png"), url("pics/images7.png"); }
+    75%, 87.5% { background-image: url("pics/images7.png"), url("pics/images8.png"); }
+    87.5%, 100% { background-image: url("pics/images8.png"), url("pics/images1.png"); }
+}
+
+
+.eventflex{
+    position: relative;
+    top: 10px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 100px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-left: 20px;
+}
+
+.eventflex::-webkit-scrollbar{
+    display: none;
+}
+
+.events{
+    width: 24px;
+    object-fit: cover;
+    flex-shrink: 0;
+    background-position: center center;
+    text-align: center;
+}
+
+.events img{
+    width: 30px;
+}
+
+.us pre{
+    position: relative;
+    top: 50px;
+    font-size: x-large;
+}
+
+.name a{
+    text-decoration: none;
+    color:black;
+}
+
+.check{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top:50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--primary-color);
+    font-size: x-large;
+}
+
+.venues{
+    position: relative;
+    top: 60px;
+    margin: 0 auto;
+    height: fit-content;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.vens{
+    width: 250px;
+    height: fit-content;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 0 5px 1px gray;
+}
+
+
+.pic{
+    height: 200px;
+    border-radius: 20px;
+    background-position: center center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.name{
+    text-align: center;
+    padding: 10px;
+    font-size: x-large;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+
+}
+
+.bot{
+    width: 100px;
+    font-size: larger;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.vnbtn{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.pic1{
+    background: url("https://www.venuelook.com/_next/image?url=https%3A%2F%2Fcdn.venuelook.com%2Fimages%2Fnew-home-images%2Foptimized%2Fcity%2Fagra.jpg&w=1080&q=75");
+}
+
+.pic2{
+    background: url("https://www.venuelook.com/_next/image?url=https%3A%2F%2Fcdn.venuelook.com%2Fimages%2Fnew-home-images%2Foptimized%2Fcity%2Fahemdabad.jpg&w=1080&q=75");
+}
+.pic3{
+    background: url("https://www.venuelook.com/_next/image?url=https%3A%2F%2Fcdn.venuelook.com%2Fimages%2Fnew-home-images%2Foptimized%2Fcity%2Fbangalore.jpg&w=1080&q=75");
+}
+.pic4{
+    background: url("https://www.venuelook.com/_next/image?url=https%3A%2F%2Fcdn.venuelook.com%2Fimages%2Fnew-home-images%2Foptimized%2Fcity%2Fasansol.jpg&w=1080&q=75");
+}
+.pic5{
+    background: url("https://www.venuelook.com/_next/image?url=https%3A%2F%2Fcdn.venuelook.com%2Fimages%2Fnew-home-images%2Foptimized%2Fcity%2Fjaipur.jpg&w=1080&q=75");
+}
+.pic6{
+    background: url("https://www.venuelook.com/_next/image?url=https%3A%2F%2Fcdn.venuelook.com%2Fimages%2Fnew-home-images%2Foptimized%2Fcity%2Flonavala.jpg&w=1080&q=75");
+}
+.pic7{
+    background: url("https://www.venuelook.com/_next/image?url=https%3A%2F%2Fcdn.venuelook.com%2Fimages%2Fnew-home-images%2Foptimized%2Fcity%2Fmahabaleshvar.png&w=1080&q=75");
+}
+.pic8{
+    background: url("https://www.venuelook.com/_next/image?url=https%3A%2F%2Fcdn.venuelook.com%2Fimages%2Fnew-home-images%2Foptimized%2Fcity%2Fmathura.jpg&w=1080&q=75");
+}
+
+.pic:hover{
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
+.footer-section {
+    margin-bottom: 15px;
+}
+
+.footer-section h3 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #bbb;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-icons a {
+    font-size: 20px;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #bbb;
+}
